@@ -344,8 +344,8 @@ a{color:inherit;text-decoration:none}
   flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;
   background:none;border:none;cursor:pointer;color:var(--muted-2);transition:.2s;padding:2px;
 }
-.tab svg{width:21px;height:21px;stroke:currentColor;stroke-width:1.8;fill:none}
-.tab .tab-lbl{font-family:var(--font-mono);font-size:8px;letter-spacing:.5px;text-transform:uppercase}
+.tab svg{width:20px;height:20px;stroke:currentColor;stroke-width:1.8;fill:none}
+.tab .tab-lbl{font-family:var(--font-mono);font-size:7.5px;letter-spacing:.3px;text-transform:uppercase}
 .tab.active{color:var(--orange)}
 
 /* ============ SECTION SHARED ============ */
@@ -506,6 +506,60 @@ a{color:inherit;text-decoration:none}
 .chat-input button{width:40px;border:none;border-radius:9px;background:var(--orange);color:#0a0a0a;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .chat-input button svg{width:16px;height:16px;stroke:currentColor;stroke-width:2;fill:none}
 
+/* ===== profile + garage ===== */
+.profile-id{display:flex;gap:12px;align-items:center;background:linear-gradient(135deg,#181410,#0e0e0e);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:10px}
+.pid-av{width:54px;height:54px;border-radius:50%;background:var(--orange);color:#0a0a0a;font-family:var(--font-display);font-size:25px;display:flex;align-items:center;justify-content:center;flex-shrink:0;letter-spacing:1px}
+.pid-name{font-family:var(--font-display);font-size:27px;letter-spacing:.5px;line-height:.95}
+.pid-meta{display:flex;gap:6px;margin:6px 0 5px}
+.pid-num{font-family:var(--font-mono);font-size:8.5px;font-weight:700;letter-spacing:.5px;background:var(--orange);color:#0a0a0a;padding:2px 6px;border-radius:5px}
+.pid-tier{font-family:var(--font-mono);font-size:8.5px;font-weight:700;letter-spacing:.5px;background:rgba(255,69,0,.15);color:var(--orange);border:1px solid rgba(255,69,0,.3);padding:2px 6px;border-radius:5px}
+.pid-team{font-family:var(--font-mono);font-size:9px;letter-spacing:.5px;text-transform:uppercase;color:var(--muted)}
+.prof-quick{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;margin-bottom:6px}
+.pq{background:var(--surface);border:1px solid var(--border);border-radius:11px;padding:10px;text-align:center}
+.pq-v{font-family:var(--font-display);font-size:27px;line-height:.9;color:var(--text)}
+.pq-v span{font-size:13px;color:var(--orange)}
+.pq-l{font-family:var(--font-mono);font-size:8px;letter-spacing:.5px;text-transform:uppercase;color:var(--muted);margin-top:3px}
+.prof-sec-h{font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin:16px 2px 9px;display:flex;justify-content:space-between;align-items:center}
+.gar-count{color:var(--orange);font-weight:700;letter-spacing:.5px}
+.kv{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);font-size:12px}
+.kv:last-child{border-bottom:none}
+.kv span{color:var(--muted)}
+.kv b{font-weight:600}
+.mini-card.contact{display:flex;align-items:center;gap:10px}
+.ct-av{width:34px;height:34px;border-radius:50%;font-family:var(--font-mono);font-size:11px;font-weight:700;color:#0a0a0a;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ct-body{flex:1}
+.ct-name{font-size:12.5px;font-weight:700}
+.ct-role{font-family:var(--font-mono);font-size:9px;color:var(--muted);margin-top:2px;letter-spacing:.3px}
+.ct-call{width:32px;height:32px;border-radius:8px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:13px;text-decoration:none;color:var(--text)}
+.ct-call:hover{border-color:var(--orange)}
+.car-card{background:var(--surface);border:1px solid var(--border);border-radius:13px;overflow:hidden;margin-bottom:10px;transition:border-color .2s}
+.car-card.on{border-color:rgba(255,69,0,.45)}
+.car-banner{position:relative;display:flex;align-items:center;justify-content:space-between;padding:13px 13px 13px 17px;background:linear-gradient(135deg,#1a1a1a,#0d0d0d)}
+.cb-accent{position:absolute;left:0;top:0;bottom:0;width:4px}
+.car-marque{font-family:var(--font-mono);font-size:7.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.car-name{font-family:var(--font-display);font-size:25px;letter-spacing:.5px;line-height:.9}
+.car-rally{font-family:var(--font-mono);font-size:7.5px;letter-spacing:.5px;text-transform:uppercase;color:var(--orange);margin-top:4px}
+.car-toggle{font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:7px 11px;border-radius:7px;border:1px solid var(--border);background:var(--surface-2);color:var(--muted);cursor:pointer;transition:.2s;flex-shrink:0}
+.car-card.on .car-toggle{background:var(--orange);border-color:var(--orange);color:#0a0a0a}
+.car-body{padding:12px 13px}
+.spec-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:11px}
+.spec{background:var(--surface-2);border:1px solid var(--border);border-radius:8px;padding:8px 4px;text-align:center}
+.spec .sp-v{font-family:var(--font-display);font-size:18px;line-height:.95;color:var(--text)}
+.spec .sp-v span{font-size:8px;color:var(--orange);font-family:var(--font-mono)}
+.spec .sp-l{font-family:var(--font-mono);font-size:6.5px;letter-spacing:.3px;text-transform:uppercase;color:var(--muted);margin-top:3px}
+.car-meta{display:flex;flex-direction:column;gap:4px;font-family:var(--font-mono);font-size:9px;letter-spacing:.3px;color:var(--muted)}
+.car-meta span:first-child{color:var(--text)}
+
+/* car switcher on fuel screen */
+.car-switch{display:flex;gap:6px;overflow-x:auto;margin-bottom:11px;padding-bottom:2px}
+.car-switch::-webkit-scrollbar{height:0}
+.cs{flex:0 0 auto;display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:8px 11px;border:1px solid var(--border);background:var(--surface);border-radius:9px;cursor:pointer;transition:.2s}
+.cs.active{border-color:var(--orange);background:var(--orange-soft)}
+.cs-name{font-family:var(--font-mono);font-size:9.5px;font-weight:700;letter-spacing:.3px;color:var(--text);white-space:nowrap}
+.cs.active .cs-name{color:var(--orange)}
+.cs-r{font-family:var(--font-mono);font-size:8px;color:var(--muted);white-space:nowrap}
+.car-media{display:block;width:100%;height:122px}
+
 /* reveal animation */
 .reveal{opacity:0;transform:translateY(36px);transition:opacity .8s cubic-bezier(.2,.7,.3,1),transform .8s cubic-bezier(.2,.7,.3,1)}
 .reveal.in{opacity:1;transform:none}
@@ -539,7 +593,7 @@ a{color:inherit;text-decoration:none}
     <div class="eyebrow"><span class="live-dot"></span>Miami → Mexico City · 2026</div>
     <h1><span class="gum">GUM</span><span class="slash">/</span><span class="os">OS</span></h1>
     <div class="tagline">Rally Operations, Reinvented <span class="pipe">·</span> Day 3 of 7</div>
-    <p class="subcopy">The command center for the world's greatest automotive adventure. Onboarding, live checkpoints, fuel, and team ops — for 120 cars across 3,000 miles. All in your pocket.</p>
+    <p class="subcopy">The command center for the world's greatest automotive adventure. Onboarding, live checkpoints, range-aware fuel coordination, crew chat and instant alerts — for 120 cars across 3,000 miles.</p>
     <div class="cta-row">
       <a href="#download" class="store-btn primary">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 12.04c-.03-2.6 2.12-3.85 2.22-3.91-1.21-1.77-3.1-2.01-3.77-2.04-1.6-.16-3.13.94-3.94.94-.81 0-2.07-.92-3.4-.89-1.75.03-3.36 1.02-4.26 2.58-1.82 3.16-.46 7.83 1.3 10.39.86 1.25 1.88 2.66 3.22 2.61 1.29-.05 1.78-.83 3.34-.83 1.55 0 2 .83 3.37.81 1.39-.03 2.27-1.28 3.12-2.54.98-1.46 1.39-2.87 1.41-2.95-.03-.01-2.7-1.04-2.73-4.13M14.6 4.5c.71-.86 1.19-2.06 1.06-3.25-1.02.04-2.26.68-2.99 1.54-.66.76-1.23 1.98-1.08 3.15 1.14.09 2.3-.58 3.01-1.44"/></svg>
@@ -620,7 +674,7 @@ a{color:inherit;text-decoration:none}
       <div class="feat-glow"></div>
       <div class="feat-screen"><span class="fn"></span>
         <div class="app-h" style="margin-top:8px">ONBOARDING</div>
-        <div class="app-sub">Rohanraje Bhosale · Car #87</div>
+        <div class="app-sub">Damon Fryer · Car #87</div>
         <div class="mini-card" style="margin-bottom:12px">
           <div style="display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:9px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)"><span>Progress</span><span style="color:var(--orange)">4 / 6</span></div>
           <div class="app-pbar"><i style="width:67%"></i></div>
@@ -665,32 +719,37 @@ a{color:inherit;text-decoration:none}
   <div class="feature-row reveal">
     <div class="feature-text">
       <div class="feature-num">03</div>
-      <h3>Find Fuel<br>Anywhere</h3>
-      <p>Partner stations along the route with live pricing, capacity and open status — so the only thing you're chasing is the horizon.</p>
+      <h3>Coordinate<br>Every Fill-Up</h3>
+      <p>GumOS reads each car's range from its live fuel level, shows only the stations it can actually reach, and surfaces live slot counts — so the whole pack spreads out instead of swarming one pump.</p>
       <ul class="feature-list">
-        <li><span class="fl-ico">✓</span>Live capacity &amp; open/closed status</li>
-        <li><span class="fl-ico">✓</span>Real-time pricing by fuel type</li>
-        <li><span class="fl-ico">✓</span>Official rally partner stations</li>
+        <li><span class="fl-ico">✓</span>Personalized range from live fuel level</li>
+        <li><span class="fl-ico">✓</span>Reachable stations, ranked by distance</li>
+        <li><span class="fl-ico">✓</span>Live cars-inbound &amp; slots-left, reserve a pump</li>
       </ul>
     </div>
     <div class="feat-frame">
       <div class="feat-glow"></div>
       <div class="feat-screen"><span class="fn"></span>
-        <div class="app-h" style="margin-top:8px">FUEL STOPS</div>
-        <div class="app-sub">3 stations within 40 mi</div>
-        <div class="fuel-stats">
-          <div class="fstat"><div class="fs-num">3</div><div class="fs-lbl">Available Now</div></div>
-          <div class="fstat"><div class="fs-num">12mi</div><div class="fs-lbl">Next Stop</div></div>
+        <div class="app-h" style="margin-top:8px">RANGE &amp; FUEL</div>
+        <div class="app-sub">Car #87 · 64% tank</div>
+        <div class="range-card">
+          <div class="rc-glow"></div>
+          <div class="rc-top"><div><div class="rc-car">Estimated Range</div><div class="rc-range">210<span> mi</span></div></div><div class="rc-tank"><div class="rt-pct">64%</div><div class="rt-lbl">Tank</div></div></div>
+          <div class="range-strip"><div class="rs-track"><div class="rs-fill" style="width:58%"></div>
+            <div class="rs-mark reach" style="left:3%"><div class="m-dot"></div></div>
+            <div class="rs-mark reach" style="left:26%"><div class="m-dot"></div></div>
+            <div class="rs-mark reach" style="left:47%"><div class="m-dot"></div></div>
+            <div class="rs-mark beyond" style="left:67%"><div class="m-dot"></div></div>
+            <div class="rs-mark beyond" style="left:89%"><div class="m-dot"></div></div>
+            <div class="rs-mark" style="left:97%"><div class="m-dot" style="background:#fff;width:4px;height:16px;border-radius:2px;border:none"></div></div>
+          </div><div class="rs-scale"><span>0 mi</span><span style="color:var(--orange)">210 mi range</span><span>360 mi</span></div></div>
         </div>
         <div class="fuel-card">
-          <div class="fc-top"><div><div class="fc-name">Shell V-Power</div><div class="fc-meta">12 MI · 99 RON</div></div><div class="fc-price">$5.<span>40</span></div></div>
-          <div class="app-pbar"><i style="width:72%"></i></div>
-          <div class="fc-bottom"><span class="dot-status" style="background:var(--green)"></span><span class="fc-tag">Open · 72% capacity</span><span class="partner">Partner</span></div>
-        </div>
-        <div class="fuel-card">
-          <div class="fc-top"><div><div class="fc-name">BP Ultimate</div><div class="fc-meta">28 MI · 98 RON</div></div><div class="fc-price">$5.<span>15</span></div></div>
+          <div class="fc-top"><div><div class="fc-name">BP Ultimate</div><div class="fc-meta">95 MI · 98 RON</div></div><div class="fc-price">$5.<span>15</span></div></div>
           <div class="app-pbar"><i style="width:44%"></i></div>
           <div class="fc-bottom"><span class="dot-status" style="background:var(--green)"></span><span class="fc-tag">Open · 44% capacity</span></div>
+          <div class="coord"><span class="c-inbound">▲ 9 inbound</span><span class="c-slots tight">● 3 slots left</span><span class="reach-badge" style="margin-left:auto">In range</span></div>
+          <button class="reserve-btn">Reserve Pump</button>
         </div>
       </div>
     </div>
@@ -759,9 +818,38 @@ a{color:inherit;text-decoration:none}
       </div>
     </div>
   </div>
-</section>
 
-<!-- ============ STATS BAND ============ -->
+  <!-- Feature 6 -->
+  <div class="feature-row reverse reveal">
+    <div class="feature-text">
+      <div class="feature-num">06</div>
+      <h3>Talk to the Pack,<br>Stay Alert</h3>
+      <p>Convoy chat, HQ broadcasts and direct messages keep every crew in sync — while severity-coded alerts push incidents, weather and route changes the moment they happen.</p>
+      <ul class="feature-list">
+        <li><span class="fl-ico">✓</span>Convoy, HQ &amp; direct messaging</li>
+        <li><span class="fl-ico">✓</span>One-tap broadcast to all 120 drivers</li>
+        <li><span class="fl-ico">✓</span>Severity-coded incident &amp; weather alerts</li>
+      </ul>
+    </div>
+    <div class="feat-frame">
+      <div class="feat-glow"></div>
+      <div class="feat-screen"><span class="fn"></span>
+        <div class="app-h" style="margin-top:8px">MESSAGES</div>
+        <div class="app-sub">Convoy · Pack 3</div>
+        <div class="chat-pin" style="margin-bottom:12px">📍 Pack 3 · 9 cars · heading Houston</div>
+        <div class="chat-msgs">
+          <div class="msg"><div class="m-av" style="background:#ff6b35">L</div><div><div class="m-name">Lena</div><div class="m-bubble">Pack 3 rolling out in 10. Everyone topped up?</div><div class="m-time">09:24</div></div></div>
+          <div class="msg me"><div><div class="m-bubble">Reserved a pump at Shell — see you there 👍</div><div class="m-time">You · 09:26</div></div></div>
+          <div class="msg"><div class="m-av" style="background:#3ddc84">P</div><div><div class="m-name">#15 Priya</div><div class="m-bubble">Heads up: Texaco at 240 is nearly dry, skip it.</div><div class="m-time">09:27</div></div></div>
+        </div>
+        <div style="margin-top:14px">
+          <div class="alert sev-incident" style="margin-bottom:8px"><div class="a-title">Car #112 mechanical stop</div><div class="a-meta"><span class="a-sev sev-incident">incident</span><span>4 min ago</span></div></div>
+          <div class="alert sev-advisory"><div class="a-title">Storm cell near Houston</div><div class="a-meta"><span class="a-sev sev-advisory">advisory</span><span>34 min ago</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="stats-band" id="stats">
   <div class="stats-inner">
     <div class="band-stat reveal"><div class="bs-num">120</div><div class="bs-lbl">Cars</div></div>
@@ -806,6 +894,7 @@ a{color:inherit;text-decoration:none}
   </div>
 </footer>
 
+<script src="image-slot.js"></script>
 <script>
 /* ===== NAV scroll state ===== */
 const nav=document.getElementById('nav');
@@ -862,13 +951,14 @@ const ICONS={
   check:'<svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>',
   team:'<svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><path d="M16 3.5a3 3 0 0 1 0 6"/><path d="M21 21v-2a4 4 0 0 0-3-3.8"/></svg>',
   chat:'<svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.5L3 21l2-5.6A8.4 8.4 0 1 1 21 11.5z"/></svg>',
+  profile:'<svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></svg>',
 };
 
 const SCREENS={
   driver:{
     onboard:()=>`
       <div class="app-h">ONBOARDING</div>
-      <div class="app-sub">Rohanraje Bhosale · Car #87</div>
+      <div class="app-sub">Damon Fryer · Car #87</div>
       <div class="mini-card" style="margin-bottom:12px">
         <div style="display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:9px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)"><span>Flag-off Readiness</span><span style="color:var(--orange)" id="obCount">4 / 6</span></div>
         <div class="app-pbar"><i id="obBar" style="width:67%"></i></div>
@@ -895,23 +985,27 @@ const SCREENS={
         <div class="cp-item"><span class="cp-no">08</span><span class="cp-name">San Miguel</span><span class="badge b-up">Day 6</span></div>
         <div class="cp-item"><span class="cp-no">09</span><span class="cp-name">Mexico City</span><span class="badge b-up">Finish</span></div>
       </div>`,
-    fuel:()=>`
+    fuel:()=>{
+      const c=activeCar(), range=carRange(c), inRange=FUEL.stations.filter(s=>s.dist<=range).length;
+      return `
       <div class="app-h">RANGE &amp; FUEL</div>
-      <div class="app-sub">Car #87 · Rohanraje Bhosale</div>
+      <div class="app-sub">Car #87 · Damon Fryer · pick your car</div>
+      <div class="car-switch" id="carSwitch">${GARAGE.filter(x=>x.selected).map(x=>`<button data-active="${x.id}" class="cs${x.id===c.id?' active':''}"><span class="cs-name">${x.name}</span><span class="cs-r">${carRange(x)} mi · ${x.tank}%</span></button>`).join('')}</div>
       <div class="range-card">
         <div class="rc-glow"></div>
         <div class="rc-top">
-          <div><div class="rc-car">Estimated Range</div><div class="rc-range">${FUEL.range}<span> mi</span></div></div>
-          <div class="rc-tank"><div class="rt-pct">${FUEL.tank}%</div><div class="rt-lbl">Tank</div></div>
+          <div><div class="rc-car">${c.marque} ${c.name} · Range</div><div class="rc-range">${range}<span> mi</span></div></div>
+          <div class="rc-tank"><div class="rt-pct">${c.tank}%</div><div class="rt-lbl">${c.fuel==='Plug-in Hybrid'?'Charge+Fuel':'Tank'}</div></div>
         </div>
-        ${rangeStrip()}
-        <div class="rc-warn">⚠ ${FUEL.nextCp.name} checkpoint is ${FUEL.nextCp.dist} mi out — beyond your range. Refuel before the leg.</div>
+        ${rangeStrip(range)}
+        <div class="rc-warn">⚠ ${FUEL.nextCp.name} checkpoint is ${FUEL.nextCp.dist} mi out — ${FUEL.nextCp.dist>range?'beyond range. Refuel before the leg.':'within range — you’re clear.'}</div>
       </div>
       <div class="fuel-stats">
-        <div class="fstat"><div class="fs-num">${FUEL.stations.filter(s=>s.dist<=FUEL.range).length}</div><div class="fs-lbl">Stations In Range</div></div>
+        <div class="fstat"><div class="fs-num">${inRange}</div><div class="fs-lbl">Stations In Range</div></div>
         <div class="fstat"><div class="fs-num">${FUEL.stations[0].dist}<span style="font-size:13px">mi</span></div><div class="fs-lbl">Next Stop</div></div>
       </div>
-      ${FUEL.stations.map((s,i)=>fuelCard(s,i)).join('')}`,
+      ${FUEL.stations.map((s,i)=>fuelCard(s,i,range)).join('')}`;
+    },
     feed:()=>`
       <div class="app-h">LIVE FEED</div>
       <div class="app-sub">Rally updates · real time</div>
@@ -923,6 +1017,7 @@ const SCREENS={
         <div class="feed-item"><div class="feed-ico">🎉</div><div class="feed-body"><div class="feed-title">Tonight: NOLA street party</div><div class="feed-desc">Frenchmen St · 20:00 · cars on display.</div><div class="feed-time">2 hr ago</div></div></div>
       </div>`,
     chat:()=>chatScreen('driver'),
+    profile:()=>profileScreen(),
   },
   organizer:{
     dash:()=>`
@@ -996,7 +1091,7 @@ const SCREENS={
 
 /* ===== fuel range data + helpers ===== */
 const FUEL={
-  range:210, tank:64, scaleMax:360, nextCp:{name:'Houston',dist:348},
+  scaleMax:360, nextCp:{name:'Houston',dist:348},
   stations:[
     {name:'Shell V-Power',dist:12,ron:99,price:'5.40',cap:72,status:'Open',inbound:4,slots:6,partner:true},
     {name:'BP Ultimate',dist:95,ron:98,price:'5.15',cap:44,status:'Open',inbound:9,slots:3,partner:false},
@@ -1005,19 +1100,19 @@ const FUEL={
     {name:"Buc-ee's Mega",dist:320,ron:93,price:'4.75',cap:88,status:'Open',inbound:3,slots:20,partner:false},
   ]
 };
-function rangeStrip(){
-  const m=FUEL.scaleMax, fill=(FUEL.range/m*100).toFixed(1);
+function rangeStrip(range){
+  const m=FUEL.scaleMax, fill=Math.min(100,(range/m*100)).toFixed(1);
   const marks=FUEL.stations.map(s=>{
     const pos=Math.min(99,(s.dist/m*100)).toFixed(1);
-    const cls=s.dist>FUEL.range?'beyond':(s.dist>FUEL.range*0.85?'edge':'reach');
+    const cls=s.dist>range?'beyond':(s.dist>range*0.85?'edge':'reach');
     return `<div class="rs-mark ${cls}" style="left:${pos}%"><div class="m-dot"></div></div>`;
   }).join('');
   const cp=Math.min(99,(FUEL.nextCp.dist/m*100)).toFixed(1);
   return `<div class="range-strip"><div class="rs-track"><div class="rs-fill" style="width:${fill}%"></div>${marks}<div class="rs-mark" style="left:${cp}%"><div class="m-dot" style="background:#fff;width:4px;height:16px;border-radius:2px;border:none"></div></div></div>
-    <div class="rs-scale"><span>0 mi</span><span style="color:var(--orange)">${FUEL.range} mi range</span><span>${FUEL.scaleMax} mi</span></div></div>`;
+    <div class="rs-scale"><span>0 mi</span><span style="color:var(--orange)">${range} mi range</span><span>${FUEL.scaleMax} mi</span></div></div>`;
 }
-function fuelCard(s,i){
-  const beyond=s.dist>FUEL.range;
+function fuelCard(s,i,range){
+  const beyond=s.dist>range;
   const sc=s.slots>=4?'':s.slots>=2?'tight':'full';
   const dotCol=s.status==='Low'?'var(--yellow)':beyond?'var(--muted-2)':'var(--green)';
   const pr=s.price.split('.');
@@ -1047,7 +1142,7 @@ const CHAT={
       {me:true,text:'Copy. Car #87 ready, fuel reserved.',time:'09:21'},
     ]},
     direct:{label:'Direct',pin:'Lena V. · Driver Ops',msgs:[
-      {name:'Lena',av:'#ff6b35',text:'Hey Rohan — docs cleared, you’re flag-off ready ✅',time:'08:55'},
+      {name:'Lena',av:'#ff6b35',text:'Hey Damon — docs cleared, you’re flag-off ready ✅',time:'08:55'},
       {me:true,text:'Amazing, thank you! Collecting kit now.',time:'08:57'},
       {name:'Lena',av:'#ff6b35',text:'Perfect. Ping me if you need anything on route.',time:'08:58'},
     ]},
@@ -1087,6 +1182,75 @@ function chatScreen(p){
     <div class="chat-input"><input id="chatInput" placeholder="Message ${data.label}…" autocomplete="off" /><button id="chatSend" aria-label="Send">${SEND_ICON}</button></div>`;
 }
 
+/* ===== profile + garage data ===== */
+const PROFILE={
+  name:'Damon Fryer', num:'87', tier:'VIP', initials:'DF',
+  blood:'O+', dob:'12 Mar 1988', age:38, nat:'British', license:'FIA Intl · Grade B',
+  rallies:'5th Gumball 3000', team:'Midnight Run',
+  copilot:{name:'Marcus Vale', role:'Navigator · +44 7700 900118', av:'MV', col:'#3d9bff'},
+  emergency:[
+    {name:'Elena Fryer', rel:'Spouse · +44 7700 900241', col:'#ff3b30'},
+    {name:'Dr. Aria Khan', rel:'Physician · +44 7700 900907', col:'#ff8f35'},
+  ],
+};
+const GARAGE=[
+  {id:'revuelto',marque:'Lamborghini',trim:'LB744',name:'Revuelto',accent:'#FF4500',engine:'6.5L V12 Hybrid',power:'1001',sixty:'2.5',top:'218',mpg:'16',fuel:'Plug-in Hybrid',drive:'AWD',plate:'DF 12',fullRange:340,tank:62,selected:true,rally:true},
+  {id:'mclaren',marque:'McLaren',trim:'720S · GTR',name:'720 GTR',accent:'#FF8000',engine:'4.0L Twin-Turbo V8',power:'710',sixty:'2.8',top:'212',mpg:'18',fuel:'98 RON',drive:'RWD',plate:'DF 720',fullRange:342,tank:80,selected:true,rally:false},
+  {id:'svj',marque:'Lamborghini',trim:'LP770-4',name:'Aventador SVJ',accent:'#C8FF00',engine:'6.5L V12',power:'759',sixty:'2.8',top:'217',mpg:'11',fuel:'98 RON',drive:'AWD',plate:'DF SVJ',fullRange:242,tank:45,selected:true,rally:false},
+  {id:'murci',marque:'Lamborghini',trim:'LP640',name:'Murciélago',accent:'#9aa0a6',engine:'6.5L V12',power:'631',sixty:'3.3',top:'211',mpg:'11',fuel:'98 RON',drive:'AWD',plate:'DF 640',fullRange:286,tank:70,selected:false,rally:false},
+];
+let activeCarId='revuelto';
+function activeCar(){ let c=GARAGE.find(x=>x.id===activeCarId); if(!c||!c.selected) c=GARAGE.find(x=>x.selected)||GARAGE[0]; return c; }
+function carRange(c){ return Math.round(c.fullRange*c.tank/100); }
+function carCard(c){
+  return `<div class="car-card${c.selected?' on':''}" data-car="${c.id}">
+    <image-slot id="garage-${c.id}" class="car-media" shape="rect" fit="cover" placeholder="Drop a photo of your ${c.name}"></image-slot>
+    <div class="car-banner"><div class="cb-accent" style="background:${c.accent}"></div>
+      <div><div class="car-marque">${c.marque} · ${c.trim}</div><div class="car-name">${c.name}</div>${c.rally?'<div class="car-rally">◆ Rally Car · #87</div>':''}</div>
+      <button class="car-toggle" data-toggle="${c.id}">${c.selected?'✓ Bringing':'+ Add'}</button>
+    </div>
+    <div class="car-body">
+      <div class="spec-grid">
+        <div class="spec"><div class="sp-v">${c.power}<span> hp</span></div><div class="sp-l">Power</div></div>
+        <div class="spec"><div class="sp-v">${c.sixty}<span>s</span></div><div class="sp-l">0–60</div></div>
+        <div class="spec"><div class="sp-v">${c.top}<span> mph</span></div><div class="sp-l">Top</div></div>
+        <div class="spec"><div class="sp-v">${c.mpg}<span> mpg</span></div><div class="sp-l">Combined</div></div>
+      </div>
+      <div class="car-meta"><span>${c.engine}</span><span>${c.drive} · ${c.fuel} · Plate ${c.plate}</span></div>
+    </div>
+  </div>`;
+}
+function profileScreen(){
+  const sel=GARAGE.filter(c=>c.selected).length;
+  return `<div class="app-h">PROFILE</div>
+    <div class="app-sub">Your driver ID &amp; garage</div>
+    <div class="profile-id">
+      <div class="pid-av">${PROFILE.initials}</div>
+      <div>
+        <div class="pid-name">${PROFILE.name}</div>
+        <div class="pid-meta"><span class="pid-num">CAR #${PROFILE.num}</span><span class="pid-tier">${PROFILE.tier}</span></div>
+        <div class="pid-team">${PROFILE.team} · ${PROFILE.rallies}</div>
+      </div>
+    </div>
+    <div class="prof-quick">
+      <div class="pq"><div class="pq-v">${PROFILE.blood}</div><div class="pq-l">Blood Group</div></div>
+      <div class="pq"><div class="pq-v">${PROFILE.age}</div><div class="pq-l">Age</div></div>
+      <div class="pq"><div class="pq-v">${sel}<span>/4</span></div><div class="pq-l">In Convoy</div></div>
+    </div>
+    <div class="prof-sec-h">Driver Details</div>
+    <div class="mini-card">
+      <div class="kv"><span>Nationality</span><b>${PROFILE.nat}</b></div>
+      <div class="kv"><span>Date of Birth</span><b>${PROFILE.dob}</b></div>
+      <div class="kv"><span>License</span><b>${PROFILE.license}</b></div>
+    </div>
+    <div class="prof-sec-h">Co-Pilot</div>
+    <div class="mini-card contact"><div class="ct-av" style="background:${PROFILE.copilot.col}">${PROFILE.copilot.av}</div><div class="ct-body"><div class="ct-name">${PROFILE.copilot.name}</div><div class="ct-role">${PROFILE.copilot.role}</div></div><a class="ct-call" href="tel:">📞</a></div>
+    <div class="prof-sec-h">Emergency Contacts</div>
+    ${PROFILE.emergency.map(e=>`<div class="mini-card contact"><div class="ct-av" style="background:${e.col}">${e.name.split(' ').map(w=>w[0]).slice(0,2).join('')}</div><div class="ct-body"><div class="ct-name">${e.name}</div><div class="ct-role">${e.rel}</div></div><a class="ct-call" href="tel:">📞</a></div>`).join('')}
+    <div class="prof-sec-h">My Garage <span class="gar-count" id="garCount">${sel} of 4 in convoy</span></div>
+    ${GARAGE.map(carCard).join('')}`;
+}
+
 /* ===== alerts data ===== */
 const ALERTS=[
   {sev:'incident',title:'Car #112 mechanical stop',desc:'Pulled over mile 64 near Slidell. Recovery dispatched, driver safe.',time:'4 min ago · I-10 E'},
@@ -1097,7 +1261,7 @@ const ALERTS=[
 ];
 
 const TABS={
-  driver:[['onboard','Onboard'],['route','Route'],['fuel','Fuel'],['chat','Chat'],['feed','Feed']],
+  driver:[['onboard','Onboard'],['route','Route'],['fuel','Fuel'],['chat','Chat'],['feed','Feed'],['profile','Profile']],
   organizer:[['dash','Dash'],['tasks','Tasks'],['check','Checks'],['chat','Comms'],['team','Team']],
 };
 
@@ -1139,6 +1303,9 @@ function wireScreen(){
     if(bar)bar.style.width=(done/all.length*100)+'%';
     if(c)c.textContent=`${done} / ${all.length}`;
   });
+  // fuel: active car switcher
+  const cs=document.getElementById('carSwitch');
+  if(cs) cs.querySelectorAll('[data-active]').forEach(b=>b.onclick=()=>{activeCarId=b.dataset.active;renderScreen();});
   // reserve a fuel pump
   appScroll.querySelectorAll('[data-reserve]').forEach(btn=>btn.onclick=()=>{
     if(btn.classList.contains('reserved'))return;
@@ -1174,6 +1341,19 @@ function wireScreen(){
     input.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();doSend();}};
     appScroll.scrollTop=appScroll.scrollHeight;
   }
+  // garage car selection
+  appScroll.querySelectorAll('[data-toggle]').forEach(btn=>btn.onclick=()=>{
+    const car=GARAGE.find(c=>c.id===btn.dataset.toggle);
+    const selCount=GARAGE.filter(c=>c.selected).length;
+    if(!car.selected && selCount>=4) return;
+    car.selected=!car.selected;
+    const card=btn.closest('.car-card');
+    card.classList.toggle('on',car.selected);
+    btn.textContent=car.selected?'✓ Bringing':'+ Add';
+    const n=GARAGE.filter(c=>c.selected).length;
+    const gc=document.getElementById('garCount'); if(gc)gc.textContent=n+' of 4 in convoy';
+    const pq=appScroll.querySelector('.prof-quick .pq:nth-child(3) .pq-v'); if(pq)pq.innerHTML=n+'<span>/4</span>';
+  });
 }
 // portal toggle
 document.querySelectorAll('.portal-toggle button').forEach(b=>b.onclick=()=>{
